@@ -9,7 +9,8 @@ from wordcloud import WordCloud
 plt.rcParams['font.sans-serif'] = ['Arial Unicode MS', 'SimHei', 'Microsoft JhengHei']
 plt.rcParams['axes.unicode_minus'] = False
 
-df = pd.read_csv('netflix_titles.csv')
+# call csv from github
+df = pd.read_csv('https://github.com/William-165EGP/netflix_analyse/raw/refs/heads/main/netflix_titles.csv')
 
 df['date_added'] = pd.to_datetime(df['date_added'], errors='coerce')
 df['year_added'] = df['date_added'].dt.year
