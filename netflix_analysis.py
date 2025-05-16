@@ -136,8 +136,9 @@ ax8.set_ylabel('發行年份', fontsize=12)
 ax8.set_xticklabels(main_ratings, rotation=45)
 
 plt.tight_layout()
-plt.show()
 plt.savefig('Netflix_analysis.png')
+plt.show()
+
 
 # combine all descriptions
 all_descriptions = ' '.join(df['description'].dropna().values)
