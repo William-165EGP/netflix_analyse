@@ -152,8 +152,9 @@ plt.figure(figsize=(12, 6))
 plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis('off')
 plt.title('Netflix 文字雲', fontsize=20)
-plt.show()
 plt.savefig('Netflix_wordcloud.png')
+plt.show()
+
 
 
 print("1. 時間趨勢：Netflix內容主要集中在2011年後")
