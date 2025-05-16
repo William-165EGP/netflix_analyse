@@ -137,6 +137,7 @@ ax8.set_xticklabels(main_ratings, rotation=45)
 
 plt.tight_layout()
 plt.show()
+plt.savefig('Netflix_analysis.png')
 
 # combine all descriptions
 all_descriptions = ' '.join(df['description'].dropna().values)
@@ -151,6 +152,7 @@ plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis('off')
 plt.title('Netflix 文字雲', fontsize=20)
 plt.show()
+plt.savefig('Netflix_wordcloud.png')
 
 
 print("1. 時間趨勢：Netflix內容主要集中在2011年後")
